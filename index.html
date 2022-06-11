@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Api météo</h1>
+  <section>
+    <p>Cliquez sur la ville dont vous souhaitez connaître la température.</p>
+    <button onclick="temp('48.8567','2.3510')">Paris</button>
+    <button onclick="temp('40.71','-74.01')">New York</button>
+    <button onclick="temp('35.70','139.73')">Tokyo</button>
+    <p>
+      <b>Température :</b>
+    </p>
+    <div id=root></div>
+  </section>
+
+  <section>
+    <p>Saisir les coordonnées de la ville dont vous souhaitez connaître la température.</p>
+    <div>
+      <label for="latitude">Latitude :</label>
+      <input id="latitude"></input>
+      <i>Entre -90 et 90</i>
+      <br/>
+      <label for="latitude">Longitude :</label>
+      <input id="longitude"></input>
+      <i>Entre -180 et 179.8</i>
+      <br/>
+      <br/>
+      <button onclick="customTemp()">Soumettre</button>
+      <p>
+        <b>Température :</b>
+      </p>
+      <div id="customTemp"></div>
+    </div>
+    <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BxEkD8MxzaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
