@@ -16,9 +16,11 @@
     <button onclick="temp('40.71','-74.01')">New York</button>
     <button onclick="temp('35.70','139.73')">Tokyo</button>
     <p>
-      <b>Température :</b>
+      <b>Température : </b><span id=root></span>
     </p>
-    <div id=root></div>
+    <p>
+      <b>Temp actuel : </b><span id="weather"></span>
+    </p>
   </section>
 
   <section>
@@ -35,12 +37,15 @@
       <br/>
       <button onclick="customTemp()">Soumettre</button>
       <p>
-        <b>Température :</b>
+        <b>Température : </b><span id="customTemp"></span>
       </p>
-      <div id="customTemp"></div>
+      <p>
+      <b>Temp actuel : </b><span id="customWeather"></span>
+    </p>
+      
     </div>
     <br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/BxEkD8MxzaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="https://too.by/webimage/testmaps/latlong.gif">
   </section>
   
   <script src="script.js"></script>
